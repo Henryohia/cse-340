@@ -96,6 +96,12 @@ div.main {
   grid-column: 1/2;
   padding: 0;
 }
+div .hero-msg {
+  background-image: url("/images/vehicles/delorean-tn.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 p {
   margin: 0;
   padding: 0;
