@@ -56,3 +56,28 @@ VALUES ('Customs'),
 	('Truck'),
 	('Sedan');
 
+
+--4. Modification of the table
+UPDATE inventory 
+SET inv_description = replace(inv_description, 'small interiors', 'a huge interior') 
+WHERE inv_id = 10;
+
+
+-- UPDATE inventory
+-- SET
+-- 	INV_DESCRIPTION = REPLACE(
+-- 		INV_DESCRIPTION,
+-- 		'small interiors',
+-- 		'a huge interior'
+-- 	)
+-- WHERE
+-- 	INV_ID = 10;
+
+--6. Update inventory
+UPDATE 
+  public.inventory
+SET 
+  inv_image = REPLACE(inv_image, '/images/', '/images/vehicles/'),
+  inv_thumbnail = REPLACE(inv_thumbnail, '/images/', '/images/vehicles/');
+
+
